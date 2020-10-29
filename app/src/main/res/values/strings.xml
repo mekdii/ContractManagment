@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ContractM</string>
+    <string name="login_text">Log in</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">OR</string>
+    <string name="dont_have_account">Dont have account?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email">Email</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="dash_board">Dashboard</string>
+    <string name="contract">Contracts</string>
+    <string name="template">Templates</string>
+    <string name="event">Events</string>
+    <string name="user">User</string>
+    <string name="_26_new_messages">26 new \n messages</string>
+    <string name="_11_active_contracts">11 active \n contracts</string>
+    <string name="_12_pending_contract">12 pending \n contract</string>
+    <string name="_13_new_reminders">13 new \n reminders</string>
+    <string name="home">Sample house rental and agreement template specifying the following details.Contract details of both parties... </string>
+    <string name="home_rental"><b>Home Rental</b></string>
+    <string name="employee_contract"><b>Employee Contract</b></string>
+    <string name="employee">Employment contract templates that state n clear and explcit terms the conditions of employemnt...</string>
+    <string name="contaracter"><b>Contaracter</b></string>
+    <string name="contracter_detail">a Contractor proposal template is a proposal written offer formally used by business who wish to close a deal..</string>
+    <string name="market"><b>Marketing</b></string>
+    <string name="market_detail">we have created a custimazable marketing agreement to help save you time while looking profesional when signing in new..</string>
+    <string name="freelancer"><b>Freelancer</b></string>
+    <string name="freelancer_detail">Use our free custimazable freelance invoice template to quickly create invoices for your freeleance work.issue invoice fast.</string>
+    <string name="service"><b>Services</b></string>
+    <string name="service_detail">you can use this templates to put your terms and agreement or service contract. this templates are user and printer friendly..</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

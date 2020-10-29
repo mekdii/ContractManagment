@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".activities.Profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/back"
+        app:title="Choose Contract"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white_color"
+
+        />
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="169dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="156dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/last"
+            android:layout_width="175dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="76dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/first"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/first"
+            app:layout_constraintTop_toBottomOf="@+id/first" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="188dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="56dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/last"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/last"
+            app:layout_constraintTop_toBottomOf="@+id/last" />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="show"
+            app:layout_constraintEnd_toEndOf="@+id/first"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/first"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+

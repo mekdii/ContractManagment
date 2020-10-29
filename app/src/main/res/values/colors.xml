@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D0645</color>
+    <color name="colorPrimaryDark">#17033A</color>
+    <color name="colorPrimaryBackground">#0886c7</color>
+    <color name="colorAccent">#1D0645</color>
+    <color name="colorFormBackground">#e4e4e4</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="button_color">#FFC107</color>
+    <color name="color_mostly">#1D0645</color>
+    <color name="color_vissible">#2F0E68</color>
+    <color name="yellow_vissible">#EDBD2E</color>
+
+</resources>

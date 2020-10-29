@@ -1,0 +1,47 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="login_button">
+        <item name="android:background">@drawable/buttonback</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:text">@string/login_text</item>
+    </style>
+
+
+    <style name="login_button.red">
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="button_signup">
+        <item name="android:background">@color/color_mostly</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.ActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
