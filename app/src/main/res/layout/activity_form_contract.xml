@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ui.ShowForm"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbarf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/back"
+            app:title="Basic rental agreement"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/white_color"
+
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:background="@color/color_mostly"
+            android:text="Land Lord Information"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mekdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/lfname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+
+                />
+
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/llast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/laddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone no"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/lphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/lemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:background="@color/color_mostly"
+            android:text="Tenant Information"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/tfirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/tlast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/tphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/temail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Occupants"
+
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/tnumber_occupant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:background="@color/color_mostly"
+            android:text="Rental Information"
+            android:textSize="20sp"
+
+            />
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House Rental Address"
+                android:textColor="@color/color_mostly"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="State" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="City" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:background="@drawable/et_custom"
+                    android:id="@+id/state"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                     />
+
+                <EditText
+                    android:id="@+id/citiy"
+                    android:background="@drawable/et_custom"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="Country" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="Postal code" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:background="@drawable/et_custom"
+                    android:id="@+id/country"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                     />
+
+                <EditText
+                    android:id="@+id/postalcode"
+                    android:background="@drawable/et_custom"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Date of agreement"
+                />
+            <DatePicker
+                android:id="@+id/start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date of agreement"
+                />
+            <DatePicker
+                android:id="@+id/end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay Period"
+                />
+            <Spinner
+                android:id="@+id/pay_period"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pay_period"
+                android:background="@drawable/blue_outline"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rental amount per month"
+                />
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/rental_amount"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security Deposit"
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/security_deposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Late Charges"
+                />
+
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/late_charges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                />
+            <Spinner
+
+                android:id="@+id/payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pay_method"
+                android:background="@drawable/blue_outline"
+                android:spinnerMode="dropdown"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collector"
+                />
+            <EditText
+                android:background="@drawable/et_custom"
+                android:id="@+id/collector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_color"
+                android:background="@color/color_mostly"
+                android:text="TERMS AND CONDITIONS"
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:hint="insert your terms and conditions"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landlord Signature"
+                android:textColor="@color/color_mostly"
+
+                />
+            <EditText
+                android:id="@+id/edit_text2"
+                android:layout_width="match_parent"
+
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenant Signature"
+                android:textColor="@color/color_mostly"
+
+                />
+            <EditText
+                android:id="@+id/edit_text3"
+                android:layout_width="match_parent"
+
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white_color"
+                android:layout_height="wrap_content"
+                android:background="@color/color_mostly"
+                android:text="SUBMIT"/>
+            <Button
+
+                android:id="@+id/update_button"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white_color"
+                android:layout_height="wrap_content"
+                android:background="@color/color_mostly"
+                android:text="UPDATE"/>
+
+            <Button
+                android:id="@+id/print"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_mostly"
+                android:text="PRINT"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.FormContract"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbarf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/back"
+        app:title="Basic rental agreement"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white_color"
+
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_color"
+        android:background="@color/color_mostly"
+        android:text="Land Lord Information"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/lfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/llast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Last Name" />
+
+        <EditText
+            android:id="@+id/laddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/lphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Phone no"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/lemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="email" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_color"
+        android:background="@color/color_mostly"
+        android:text="Tenant Information"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tfirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/tlast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Last Name" />
+
+        <EditText
+            android:id="@+id/tphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Phone"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/temail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/tnumber_occupant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Number of Occupants"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_color"
+        android:background="@color/color_mostly"
+        android:text="Rental Information"
+        android:textSize="20sp"
+
+        />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="House Rental Address"
+            android:textColor="@color/color_mostly"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:hint="State" />
+
+            <EditText
+                android:id="@+id/citiy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:hint="City" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:hint="Country" />
+
+            <EditText
+                android:id="@+id/postalcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:hint="Postal Code"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Date of agreement"
+                />
+        <DatePicker
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date of agreement"
+                />
+        <DatePicker
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Period"
+            />
+        <Spinner
+            android:id="@+id/pay_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pay_period"
+            android:background="@drawable/blue_outline"
+            android:spinnerMode="dropdown"/>
+        <EditText
+            android:id="@+id/rental_amount"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rental amount per month"
+            />
+        <EditText
+            android:id="@+id/security_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Security Deposit"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/late_charges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Late Charges"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            />
+        <Spinner
+
+            android:id="@+id/payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pay_method"
+            android:background="@drawable/blue_outline"
+            android:spinnerMode="dropdown"/>
+        <EditText
+            android:id="@+id/collector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Collector"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:background="@color/color_mostly"
+            android:text="TERMS AND CONDITIONS"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:hint="insert your terms and conditions"
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Landlord Signature"
+            android:textColor="@color/color_mostly"
+
+            />
+        <EditText
+            android:id="@+id/edit_text2"
+            android:layout_width="match_parent"
+
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenant Signature"
+            android:textColor="@color/color_mostly"
+
+            />
+        <EditText
+            android:id="@+id/edit_text3"
+            android:layout_width="match_parent"
+
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"/>
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white_color"
+            android:layout_height="wrap_content"
+            android:background="@color/color_mostly"
+            android:text="SUBMIT"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_mostly"
+            android:text="PRINT"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>-->

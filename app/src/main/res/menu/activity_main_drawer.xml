@@ -25,8 +25,13 @@
             android:icon="@drawable/event"
             android:title="@string/event" />
         <item
-            android:id="@+id/user"
+            android:id="@+id/user2"
             android:icon="@drawable/user"
             android:title="@string/user" />
+
+        <item
+            android:id="@+id/logoutt"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
     </group>
 </menu>

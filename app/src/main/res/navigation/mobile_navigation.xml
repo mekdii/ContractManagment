@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/viewPageFragment">
 
     <fragment
         android:id="@+id/nav_home"
@@ -15,13 +15,24 @@
         android:id="@+id/nav_gallery"
         android:name="com.gebeya.contractm.activities.ui.gallery.GalleryFragment"
         android:label="@string/contract"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_signin"
+            app:destination="@id/signin" />
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.gebeya.contractm.activities.ui.slideshow.SlideshowFragment"
         android:label="@string/template"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
     <fragment
         android:id="@+id/event"
         android:name="com.gebeya.contractm.activities.Event"
@@ -31,5 +42,52 @@
 
 
         />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.gebeya.contractm.activities.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPageFragment"
+            app:destination="@id/viewPageFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_registor"
+            app:destination="@id/registor" />
+        <action
+            android:id="@+id/action_splashFragment_to_signin"
+            app:destination="@id/signin" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPageFragment"
+        android:name="com.gebeya.contractm.activities.onboarding.ViewPageFragment"
+        android:label="fragment_view_page"
+        tools:layout="@layout/fragment_view_page" >
+        <action
+            android:id="@+id/action_viewPageFragment_to_registor"
+            app:destination="@id/registor" />
+        <action
+            android:id="@+id/action_viewPageFragment_to_signin"
+            app:destination="@id/signin" />
+    </fragment>
+    <fragment
+        android:id="@+id/registor"
+        android:name="com.gebeya.contractm.activities.onboarding.screens.Registor"
+        android:label="Registor" >
+        <action
+            android:id="@+id/action_registor_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/signin"
+        android:name="com.gebeya.contractm.activities.onboarding.screens.Signin"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signin_to_registor"
+            app:destination="@id/registor" />
+        <action
+            android:id="@+id/action_signin_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
 
 </navigation>

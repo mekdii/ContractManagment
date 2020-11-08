@@ -11,23 +11,63 @@ class SharedPrefManager  (context: Context) {
 
     companion object {
         const val USER_TOKEN = "user_token"
+        const val USER_NAME = "user_fname"
+        const val USER_lNAME = "user_lname"
+        const val IS_LOGIN = "IsLoggedIn"
+        private var mInstance: SharedPrefManager? = null
     }
 
     /**
      * Function to save auth token
      */
-    fun saveAuthToken(token: String) {
+    fun saveAuthToken(token: String , fname : String , lname :String ) {
         val editor = prefs.edit()
+        editor.putBoolean(IS_LOGIN , true)
         editor.putString(USER_TOKEN, token)
+        editor.putString(USER_NAME, fname)
+        editor.putString(USER_lNAME , lname)
+
         editor.apply()
     }
 
     /**
      * Function to fetch auth token
      */
-    fun fetchAuthToken(): String? {
-        return prefs.getString(USER_TOKEN, null)
+    fun fetchAuthToken(): HashMap<String, String?>? {
+
+        val user = HashMap<String, String?>()
+        user[USER_TOKEN] = prefs.getString(USER_TOKEN, null)
+        user[USER_NAME] = prefs.getString(USER_NAME, null)
+        user[USER_lNAME] = prefs.getString(USER_lNAME, null)
+        return user
+
+
+        //return prefs.getString(USER_TOKEN, null)
     }
+        fun clear() {
+       // val sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE)
+        val editor = prefs.edit()
+        editor.clear()
+        editor.apply()
+    }
+        fun isLoggedIn(): Boolean{
+       // get() {
+
+            //val sharedPreferences =
+              //  mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE)
+            return prefs.getBoolean(IS_LOGIN , false)
+        }
+
+    @Synchronized
+        fun getInstance(mCtx: Context): SharedPrefManager {
+            if (mInstance == null) {
+                mInstance = SharedPrefManager(mCtx)
+            }
+            return mInstance as SharedPrefManager
+        }
+    }
+
+
 
 
 
@@ -84,4 +124,4 @@ class SharedPrefManager  (context: Context) {
 //            return mInstance as SharedPrefManager
 //        }
 //    }
-}
+//}

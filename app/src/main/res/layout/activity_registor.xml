@@ -28,48 +28,48 @@
 
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextEmaill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
         />
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/editTextPasswordd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
 
         />
     <EditText
-        android:id="@+id/confirmp"
+        android:id="@+id/confirmpp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
 
         />
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/editTextNamee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="First Name"
 
         />
     <EditText
-        android:id="@+id/editTextSchool"
+        android:id="@+id/editTextSchooll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Last Name"
 
         />
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/usernamee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
 
         />
     <EditText
-        android:id="@+id/company_name"
+        android:id="@+id/company_namee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Company name"
@@ -101,7 +101,7 @@
 
     <Button
         android:layout_marginTop="20dp"
-        android:id="@+id/buttonSignUp"
+        android:id="@+id/buttonSignUpp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"

@@ -36,7 +36,20 @@
     <string name="freelancer_detail">Use our free custimazable freelance invoice template to quickly create invoices for your freeleance work.issue invoice fast.</string>
     <string name="service"><b>Services</b></string>
     <string name="service_detail">you can use this templates to put your terms and agreement or service contract. this templates are user and printer friendly..</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">logout</string>
+
+    <string-array name="pay_period">
+        <item>Every week</item>
+        <item>Every 15 day of Month</item>
+        <item>Every month</item>
+    </string-array>
+
+    <string-array name="pay_method">
+        <item>amole</item>
+        <item>Hello cash</item>
+        <item>pay pal</item>
+    </string-array>
 
 </resources>

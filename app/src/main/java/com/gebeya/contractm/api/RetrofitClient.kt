@@ -1,6 +1,7 @@
 package com.gebeya.contractm.api
 import android.content.Context
 import android.util.Base64
+import com.gebeya.contractm.activities.onboarding.screens.Registor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

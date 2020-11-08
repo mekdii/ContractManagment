@@ -1,6 +1,5 @@
 package com.gebeya.contractm.activities
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -12,7 +11,6 @@ import kotlinx.android.synthetic.main.activity_registor.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
 
 class Registor : AppCompatActivity() {
     // private var retrofit: Retrofit? = RetrofitClient.getInstance()
@@ -25,36 +23,36 @@ class Registor : AppCompatActivity() {
 //            val intent = Intent(this, Login::class.java)
 //            startActivity(intent)
 //        }
-        buttonSignUp.setOnClickListener {
+        buttonSignUpp.setOnClickListener {
 
-            val  firstName = editTextEmail.text.toString().trim()
-            val lastName = editTextPassword.text.toString().trim()
-            val email = editTextName.text.toString().trim()
-            val password = editTextSchool.text.toString().trim()
+            val  firstName = editTextEmaill.text.toString().trim()
+            val lastName = editTextPasswordd.text.toString().trim()
+            val email = editTextNamee.text.toString().trim()
+            val password = editTextSchooll.text.toString().trim()
 
 
             if(email.isEmpty()){
-                editTextEmail.error = "Email required"
-                editTextEmail.requestFocus()
+                editTextEmaill.error = "Email required"
+                editTextEmaill.requestFocus()
                 return@setOnClickListener
             }
 
 
             if(password.isEmpty()){
-                editTextPassword.error = "Password required"
-                editTextPassword.requestFocus()
+                editTextPasswordd.error = "Password required"
+                editTextPasswordd.requestFocus()
                 return@setOnClickListener
             }
 
             if( firstName.isEmpty()){
-                editTextName.error = "Name required"
-                editTextName.requestFocus()
+                editTextNamee.error = "Name required"
+                editTextNamee.requestFocus()
                 return@setOnClickListener
             }
 
             if(lastName.isEmpty()){
-                editTextSchool.error = "School required"
-                editTextSchool.requestFocus()
+                editTextSchooll.error = "School required"
+                editTextSchooll.requestFocus()
                 return@setOnClickListener
             }
 

@@ -6,15 +6,15 @@
 
 
 
-    <item android:id="@+id/person"
+    <item android:id="@+id/search"
         android:title="person"
-        android:icon="@drawable/person"
+        android:icon="@drawable/search"
         app:showAsAction="always">
 
     </item>
-    <item android:id="@+id/search"
+    <item android:id="@+id/logout"
         android:title="search"
-        android:icon="@drawable/search"
+        android:icon="@drawable/logout"
         app:showAsAction="always">
 
     </item>

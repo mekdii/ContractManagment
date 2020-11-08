@@ -11,9 +11,10 @@ import com.gebeya.contractm.api.RetrofitClient
 import com.gebeya.contractm.models.LoginResponse
 import com.gebeya.contractm.storage.SharedPrefManager
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_login.editTextEmail
+
 
 import kotlinx.android.synthetic.main.activity_registor.*
+import kotlinx.android.synthetic.main.fragment_signin.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,7 +26,7 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        ivShowHidePass.setOnClickListener {
+        ivShowHidePasss.setOnClickListener {
             mIsShowPass = !mIsShowPass
             showPassword(mIsShowPass)
         }
@@ -35,16 +36,16 @@ class Login : AppCompatActivity() {
         apiClient = RetrofitClient
         sessionManager = SharedPrefManager(this)
 
-        signup.setOnClickListener {
+        signupp.setOnClickListener {
             val intent  = Intent(this , Registor::class.java)
             startActivity(intent)
         }
 
 
-        buttonLogin.setOnClickListener {
+        buttonLoginn.setOnClickListener {
 
             val email = editTextEmail.text.toString().trim()
-            val password = editTextPassword.text.toString().trim()
+            val password = editTextPasswordd.text.toString().trim()
 
             if(email.isEmpty()){
                 editTextEmail.error = "Email required"
@@ -54,8 +55,8 @@ class Login : AppCompatActivity() {
 
 
             if(password.isEmpty()){
-                editTextPassword.error = "Password required"
-                editTextPassword.requestFocus()
+                editTextPasswordd.error = "Password required"
+                editTextPasswordd.requestFocus()
                 return@setOnClickListener
             }
 
@@ -65,31 +66,31 @@ class Login : AppCompatActivity() {
             map["password"] = password
 
 
-            RetrofitClient.getApiService(this).loginUser(map)
-                .enqueue(object: Callback<LoginResponse> {
-                    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                        Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
-                    }
-
-                    override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
-                        val loginResponse = response.body()
-
-                        if (loginResponse?.success == true && loginResponse.user != null) {
-                            if (loginResponse != null) {
-
-                                sessionManager.saveAuthToken(loginResponse.token)
-
-                                val intent = Intent(this@Login, Profile::class.java)
-                                startActivity(intent)
-                            }
-
-                        } else {
-                            Toast.makeText(applicationContext, "ayseram on response", Toast.LENGTH_LONG).show()
-                            // Error logging in
-                        }
-
-                    }
-                })
+//            RetrofitClient.getApiService(this).loginUser(map)
+//                .enqueue(object: Callback<LoginResponse> {
+//                    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+//                        Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
+//                    }
+//
+//                    override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+//                        val loginResponse = response.body()
+//
+//                        if (loginResponse?.success == true) {
+//                            if (loginResponse != null) {
+//
+//                                sessionManager.saveAuthToken(loginResponse.token)
+//
+//                                val intent = Intent(this@Login, Profile::class.java)
+//                                startActivity(intent)
+//                            }
+//
+//                        } else {
+//                            Toast.makeText(applicationContext, "ayseram on response", Toast.LENGTH_LONG).show()
+//                            // Error logging in
+//                        }
+//
+//                    }
+//                })
 
         }
 
@@ -97,15 +98,15 @@ class Login : AppCompatActivity() {
     private fun showPassword(isShow: Boolean) {
         if (isShow) {
             // To show the password
-            etPass.transformationMethod = HideReturnsTransformationMethod.getInstance()
-            ivShowHidePass.setImageResource(R.drawable.hide)
+            etPasss.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            ivShowHidePasss.setImageResource(R.drawable.hide)
         } else {
             // To hide the password
-            etPass.transformationMethod = PasswordTransformationMethod.getInstance()
-            ivShowHidePass.setImageResource(R.drawable.show)
+            etPasss.transformationMethod = PasswordTransformationMethod.getInstance()
+            ivShowHidePasss.setImageResource(R.drawable.show)
         }
         // This line of code to put the pointer at the end of the password string
-        etPass.setSelection(etPass.text.toString().length)
+        etPasss.setSelection(etPasss.text.toString().length)
     }
 
 //    override fun onStart() {

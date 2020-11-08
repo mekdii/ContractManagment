@@ -37,8 +37,8 @@ class HomeFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         var itemview = item.itemId
         when(itemview){
-//            R.id.search -> Toast.makeText(applicationContext , "this is search" , Toast.LENGTH_SHORT)
-//            R.id.person -> Toast.makeText(applicationContext , "person clicked" , Toast.LENGTH_SHORT)
+            R.id.search -> Toast.makeText(activity , "this is search" , Toast.LENGTH_SHORT).show()
+         // R.id.person -> Toast.makeText(applicationContext , "person clicked" , Toast.LENGTH_SHORT)
         }
         return false
     }
