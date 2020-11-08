@@ -6,43 +6,6 @@
     app:startDestination="@+id/viewPageFragment">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.gebeya.contractm.activities.ui.home.HomeFragment"
-        android:label="@string/dash_board"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.gebeya.contractm.activities.ui.gallery.GalleryFragment"
-        android:label="@string/contract"
-        tools:layout="@layout/fragment_gallery" >
-        <action
-            android:id="@+id/action_nav_gallery_to_signin"
-            app:destination="@id/signin" />
-        <action
-            android:id="@+id/action_nav_gallery_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.gebeya.contractm.activities.ui.slideshow.SlideshowFragment"
-        android:label="@string/template"
-        tools:layout="@layout/fragment_slideshow" >
-        <action
-            android:id="@+id/action_nav_slideshow_to_nav_gallery"
-            app:destination="@id/nav_gallery" />
-    </fragment>
-    <fragment
-        android:id="@+id/event"
-        android:name="com.gebeya.contractm.activities.Event"
-        android:label="@string/event"
-        tools:layout="@layout/fragment_event"
-
-
-
-        />
-    <fragment
         android:id="@+id/splashFragment"
         android:name="com.gebeya.contractm.activities.SplashFragment"
         android:label="fragment_splash"
@@ -68,15 +31,14 @@
         <action
             android:id="@+id/action_viewPageFragment_to_signin"
             app:destination="@id/signin" />
+        <action
+            android:id="@+id/action_viewPageFragment_to_login"
+            app:destination="@id/login" />
     </fragment>
     <fragment
         android:id="@+id/registor"
         android:name="com.gebeya.contractm.activities.onboarding.screens.Registor"
-        android:label="Registor" >
-        <action
-            android:id="@+id/action_registor_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
-    </fragment>
+        android:label="Registor" />
     <fragment
         android:id="@+id/signin"
         android:name="com.gebeya.contractm.activities.onboarding.screens.Signin"
@@ -85,9 +47,11 @@
         <action
             android:id="@+id/action_signin_to_registor"
             app:destination="@id/registor" />
-        <action
-            android:id="@+id/action_signin_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
     </fragment>
+    <activity
+        android:id="@+id/login"
+        android:name="com.gebeya.contractm.activities.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 
 </navigation>

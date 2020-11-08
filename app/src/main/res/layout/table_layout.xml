@@ -11,7 +11,7 @@
     <TableRow>
         <TextView
             android:layout_width="100dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:id="@+id/category"
             android:textSize="14dp"
             android:padding="10dp"
@@ -21,7 +21,7 @@
 
         <TextView
             android:layout_width="100dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:id="@+id/start_date"
             android:textSize="14dp"
             android:padding="10dp"
@@ -31,7 +31,7 @@
 
         <TextView
             android:layout_width="100dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:id="@+id/business_partner"
             android:textSize="14dp"
             android:padding="10dp"
@@ -40,11 +40,11 @@
             />
 
         <LinearLayout
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
 
             android:padding="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:orientation="horizontal">
 
             <ImageView

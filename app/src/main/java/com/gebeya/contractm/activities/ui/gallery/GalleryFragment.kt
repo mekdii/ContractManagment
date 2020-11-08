@@ -59,7 +59,7 @@ class GalleryFragment : Fragment(), CellClickListener {
         //search.setText(sessionManager.fetchAuthToken()?.getValue(SharedPrefManager.USER_NAME))
 
         //crating an arraylist to store users using the data class user
-      //  val users = ArrayList<Contract>()
+        //  val users = ArrayList<Contract>()
 
         //adding some dummy data to the list
 //        users.add(Contract("Belal Khan", "addis abeba", "hi", "active"))
@@ -72,8 +72,7 @@ class GalleryFragment : Fragment(), CellClickListener {
 
 
         //now adding the adapter to recyclerview
-       // view.recyclerView.adapter = adapter
-
+        // view.recyclerView.adapter = adapter
 
 
         return view
@@ -81,27 +80,30 @@ class GalleryFragment : Fragment(), CellClickListener {
 
     override fun onCellClickListener(data: Contract?) {
 
-            activity?.let { it1 ->
-        RetrofitClient.getApiService(it1).deleteForm(data!!._id)
-            .enqueue(object : Callback<String> {
-                override fun onFailure(call: Call<String>, t: Throwable) {
-                    Toast.makeText(activity, "PLease Try Again!!", Toast.LENGTH_SHORT).show()
-                }
-                override fun onResponse(call: Call<String>, response: Response<String>) {
-                    if (response.isSuccessful) {
-
-                        Toast.makeText(activity, "successfully deleted", Toast.LENGTH_LONG).show()
-
+        activity?.let { it1 ->
+            RetrofitClient.getApiService(it1).deleteForm(data!!._id)
+                .enqueue(object : Callback<String> {
+                    override fun onFailure(call: Call<String>, t: Throwable) {
+                        Toast.makeText(activity, "PLease Try Again!!", Toast.LENGTH_SHORT).show()
                     }
 
-                }
-            }) }
+                    override fun onResponse(call: Call<String>, response: Response<String>) {
+                        if (response.isSuccessful) {
+
+                            Toast.makeText(activity, "successfully deleted", Toast.LENGTH_LONG)
+                                .show()
+
+                        }
+
+                    }
+                })
+        }
 //
 //        if (data != null) {
 //            Toast.makeText(activity, data._id, Toast.LENGTH_SHORT).show()
 //        }
 
-      //  Log.d("fuck" , data!!.lFirstName )
+        //  Log.d("fuck" , data!!.lFirstName )
 //        if (data != null) {
 //            Toast.makeText(activity, "lihed new", Toast.LENGTH_SHORT).show()
 //        }
@@ -111,45 +113,45 @@ class GalleryFragment : Fragment(), CellClickListener {
 //        }
 
 
-      //  deleteForms()
+        //  deleteForms()
 
-      //  Toast.makeText(activity, "worked", Toast.LENGTH_SHORT).show()
+        //  Toast.makeText(activity, "worked", Toast.LENGTH_SHORT).show()
 
     }
 
     override fun onInfoClickListener(data: Contract?) {
 
 
-        activity?.let{
-            val intent = Intent (it, FormContract::class.java)
-            intent.putExtra("SOME_FLAG" , true)
-            intent.putExtra("id" , data!!._id)
-            intent.putExtra("lFname" , data!!.lFirstName)
-            intent.putExtra("lLname" , data!!.lLastName)
+        activity?.let {
+            val intent = Intent(it, FormContract::class.java)
+            intent.putExtra("SOME_FLAG", true)
+            intent.putExtra("id", data!!._id)
+            intent.putExtra("lFname", data!!.lFirstName)
+            intent.putExtra("lLname", data!!.lLastName)
             intent.putExtra("lemail", data!!.lemail)
-            intent.putExtra("lphone" , data!!.lPhone)
-            intent.putExtra("address" , data!!.address)
-            intent.putExtra("tFname" , data!!.tFirstName)
+            intent.putExtra("lphone", data!!.lPhone)
+            intent.putExtra("address", data!!.address)
+            intent.putExtra("tFname", data!!.tFirstName)
             intent.putExtra("tLname", data!!.tLastName)
-            intent.putExtra("temail" , data!!.temail)
+            intent.putExtra("temail", data!!.temail)
 
-            intent.putExtra("tphone" , data!!.tPhone)
-            intent.putExtra("country" , data!!.country)
+            intent.putExtra("tphone", data!!.tPhone)
+            intent.putExtra("country", data!!.country)
             intent.putExtra("state", data!!.state)
-            intent.putExtra("city" , data!!.city)
+            intent.putExtra("city", data!!.city)
 
-            intent.putExtra("postal" , data!!.postal)
-            intent.putExtra("startdate" , data!!.startDate)
+            intent.putExtra("postal", data!!.postal)
+            intent.putExtra("startdate", data!!.startDate)
             intent.putExtra("enddate", data!!.endDate)
-            intent.putExtra("payperiod" , data!!.payPeriod)
+            intent.putExtra("payperiod", data!!.payPeriod)
 
-            intent.putExtra("rentamount" , data!!.rentAmount)
-            intent.putExtra("securitiyDeposit" , data!!.securityDeposit)
+            intent.putExtra("rentamount", data!!.rentAmount)
+            intent.putExtra("securitiyDeposit", data!!.securityDeposit)
             intent.putExtra("latecharge", data!!.lateCharge)
             intent.putExtra("paymentMethod", data!!.paymentMethod)
 
-            intent.putExtra("collector" , data!!.collector)
-            intent.putExtra("terms" , data!!.terms)
+            intent.putExtra("collector", data!!.collector)
+            intent.putExtra("terms", data!!.terms)
             intent.putExtra("lsgnature", data!!.lSignature)
             intent.putExtra("tsignature", data!!.tSignature)
             // intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -157,7 +159,7 @@ class GalleryFragment : Fragment(), CellClickListener {
         }
 
 
-        Toast.makeText(activity, "info icon clicked", Toast.LENGTH_SHORT).show()
+        //  Toast.makeText(activity, "info icon clicked", Toast.LENGTH_SHORT).show()
 
     }
 
@@ -213,10 +215,10 @@ class GalleryFragment : Fragment(), CellClickListener {
 //
 //
 //    }
-    private fun deleteForms(){
-    for (i in contractList){
-        val id = i._id
-        Toast.makeText(activity , id, Toast.LENGTH_LONG).show()
+//    private fun deleteForms(){
+//    for (i in contractList){
+//        val id = i._id
+//        Toast.makeText(activity , id, Toast.LENGTH_LONG).show()
 
 
 //    activity?.let { it1 ->
@@ -234,8 +236,6 @@ class GalleryFragment : Fragment(), CellClickListener {
 //
 //                }
 //            }) }
-
-}}
 
     private fun getAllReport() {
 

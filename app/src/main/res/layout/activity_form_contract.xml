@@ -41,7 +41,8 @@
                 android:id="@+id/mekdi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="First Name"
+                android:text="@string/first_name"
+
 
                 />
 
@@ -50,16 +51,17 @@
                 android:id="@+id/lfname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
+                android:paddingLeft="10dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last Name"
+                android:text="@string/llast_name"
 
                 />
 
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/llast"
                 android:layout_width="match_parent"
@@ -74,6 +76,7 @@
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/laddress"
                 android:layout_width="match_parent"
@@ -84,11 +87,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone no"
+                android:text="@string/lphone_no"
 
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/lphone"
                 android:layout_width="match_parent"
@@ -98,11 +102,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="email"
+                android:text="@string/lemail"
 
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/lemail"
                 android:layout_width="match_parent"
@@ -116,7 +121,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white_color"
             android:background="@color/color_mostly"
-            android:text="Tenant Information"
+            android:text="@string/tenant_information"
             android:textSize="20sp"
             android:gravity="center"
             />
@@ -129,11 +134,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="First Name"
+                android:text="@string/tfirst_name"
 
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/tfirst"
                 android:layout_width="match_parent"
@@ -143,11 +149,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last Name"
+                android:text="@string/tlast_name"
 
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/tlast"
                 android:layout_width="match_parent"
@@ -156,11 +163,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone"
+                android:text="@string/tphone"
 
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/tphone"
                 android:layout_width="match_parent"
@@ -171,11 +179,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email"
+                android:text="@string/temail"
 
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/temail"
                 android:layout_width="match_parent"
@@ -183,21 +192,7 @@
 
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Number of Occupants"
 
-                />
-
-            <EditText
-                android:background="@drawable/et_custom"
-                android:id="@+id/tnumber_occupant"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-
-                android:inputType="number" />
         </LinearLayout>
 
         <TextView
@@ -208,7 +203,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white_color"
             android:background="@color/color_mostly"
-            android:text="Rental Information"
+            android:text="@string/rental_information"
             android:textSize="20sp"
 
             />
@@ -221,7 +216,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="House Rental Address"
+                android:text="@string/house_rental_address"
                 android:textColor="@color/color_mostly"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -234,7 +229,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
 
-                    android:text="State" />
+                    android:text="@string/state" />
 
                 <TextView
 
@@ -242,7 +237,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
 
-                    android:text="City" />
+                    android:text="@string/city" />
             </LinearLayout>
 
 
@@ -252,6 +247,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:paddingLeft="10dp"
                     android:background="@drawable/et_custom"
                     android:id="@+id/state"
                     android:layout_width="0dp"
@@ -261,6 +257,7 @@
                      />
 
                 <EditText
+                    android:paddingLeft="10dp"
                     android:id="@+id/citiy"
                     android:background="@drawable/et_custom"
 
@@ -269,7 +266,7 @@
                     android:layout_weight="1"
 
 
-                    android:inputType="number" />
+                     />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -282,7 +279,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
 
-                    android:text="Country" />
+                    android:text="@string/country" />
 
                 <TextView
 
@@ -290,7 +287,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
 
-                    android:text="Postal code" />
+                    android:text="@string/postal_code" />
             </LinearLayout>
 
 
@@ -300,6 +297,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:paddingLeft="10dp"
                     android:background="@drawable/et_custom"
                     android:id="@+id/country"
                     android:layout_width="0dp"
@@ -309,6 +307,7 @@
                      />
 
                 <EditText
+                    android:paddingLeft="10dp"
                     android:id="@+id/postalcode"
                     android:background="@drawable/et_custom"
 
@@ -343,7 +342,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Start Date of agreement"
+                android:text="@string/start_date_of_agreement"
                 />
             <DatePicker
                 android:id="@+id/start_date"
@@ -354,7 +353,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="End Date of agreement"
+                android:text="@string/end_date_of_agreement"
                 />
             <DatePicker
                 android:id="@+id/end_date"
@@ -366,7 +365,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pay Period"
+                android:text="@string/pay_period"
                 />
             <Spinner
                 android:id="@+id/pay_period"
@@ -379,9 +378,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rental amount per month"
+                android:text="@string/rental_amount_per_month"
                 />
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/rental_amount"
                 android:inputType="number"
@@ -392,10 +392,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Security Deposit"
+                android:text="@string/security_deposit"
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/security_deposit"
                 android:layout_width="match_parent"
@@ -406,10 +407,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Late Charges"
+                android:text="@string/late_charges"
                 />
 
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/late_charges"
                 android:layout_width="match_parent"
@@ -420,7 +422,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Payment Method"
+                android:text="@string/payment_method"
                 />
             <Spinner
 
@@ -433,9 +435,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Collector"
+                android:text="@string/collector"
                 />
             <EditText
+                android:paddingLeft="10dp"
                 android:background="@drawable/et_custom"
                 android:id="@+id/collector"
                 android:layout_width="match_parent"
@@ -450,14 +453,15 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white_color"
                 android:background="@color/color_mostly"
-                android:text="TERMS AND CONDITIONS"
+                android:text="@string/terms_and_conditions"
                 android:textSize="20sp"/>
 
 
             <EditText
-                android:id="@+id/edit_text"
+                android:paddingLeft="10dp"
+                android:id="@+id/terms"
                 android:layout_width="match_parent"
-                android:hint="insert your terms and conditions"
+                android:hint="@string/insert_your_terms_and_conditions"
                 android:layout_height="150dp"
                 android:inputType="text|textMultiLine"
                 android:gravity="top"/>
@@ -465,12 +469,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Landlord Signature"
+                android:text="@string/landlord_signature"
                 android:textColor="@color/color_mostly"
 
                 />
             <EditText
-                android:id="@+id/edit_text2"
+                android:paddingLeft="10dp"
+                android:id="@+id/lsignature"
                 android:layout_width="match_parent"
 
                 android:layout_height="150dp"
@@ -480,12 +485,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tenant Signature"
+                android:text="@string/tenant_signature"
                 android:textColor="@color/color_mostly"
 
                 />
             <EditText
-                android:id="@+id/edit_text3"
+                android:paddingLeft="10dp"
+                android:id="@+id/tsignature"
                 android:layout_width="match_parent"
 
                 android:layout_height="150dp"
@@ -508,7 +514,7 @@
                 android:textColor="@color/white_color"
                 android:layout_height="wrap_content"
                 android:background="@color/color_mostly"
-                android:text="SUBMIT"/>
+                android:text="@string/submit"/>
             <Button
 
                 android:id="@+id/update_button"
@@ -516,7 +522,7 @@
                 android:textColor="@color/white_color"
                 android:layout_height="wrap_content"
                 android:background="@color/color_mostly"
-                android:text="UPDATE"/>
+                android:text="@string/update"/>
 
             <Button
                 android:id="@+id/print"
@@ -525,7 +531,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/color_mostly"
-                android:text="PRINT"/>
+                android:text="@string/print"/>
 
 
 

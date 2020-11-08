@@ -1,217 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activities.Profile"
-    >
-
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:navigationIcon="@drawable/back"
-        app:title="create account"
-        android:background="@color/colorPrimary"
-        app:titleTextColor="@color/white_color"
-
-        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="30dp">
+        tools:context=".activities.onboarding.screens.Registor"
+        >
 
-
-    <EditText
-        android:id="@+id/editTextEmaill"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        />
-    <EditText
-        android:id="@+id/editTextPasswordd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-
-        />
-    <EditText
-        android:id="@+id/confirmpp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Confirm Password"
-
-        />
-    <EditText
-        android:id="@+id/editTextNamee"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="First Name"
-
-        />
-    <EditText
-        android:id="@+id/editTextSchooll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Last Name"
-
-        />
-    <EditText
-        android:id="@+id/usernamee"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Username"
-
-        />
-    <EditText
-        android:id="@+id/company_namee"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Company name"
-
-        />
-    </LinearLayout>
-
-    <LinearLayout
-        android:paddingLeft="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <CheckBox
-            android:id="@+id/checkbox"
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
-        <TextView
-            android:layout_marginLeft="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="By signing up, you agree to plan its"
+
+            app:navigationIcon="@drawable/back"
+
+            app:title="create account"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/white_color"
 
             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/ivShowHidePas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-30dp"
+                    app:srcCompat="@drawable/show"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/confirmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/ivShowHidecon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-30dp"
+                    app:srcCompat="@drawable/show"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/editTextfirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+
+                />
+            <EditText
+                android:id="@+id/editTextlast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By signing up, you agree to plan its"
+
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/buttonSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            style="@style/button_signup"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+
 
 
     </LinearLayout>
-
-    <Button
-        android:layout_marginTop="20dp"
-        android:id="@+id/buttonSignUpp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"
-        style="@style/button_signup"
-        android:layout_gravity="center_horizontal"
-        />
-
-
-
-
-
-
-</LinearLayout>
 </ScrollView>
-
-
-
-
-
-<!--<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryBackground"
-    tools:context=".activities.Registor">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:text="Sign Up"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
-        android:textColor="@color/colorFormBackground" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorFormBackground"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="5dp"
-            android:hint="email"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:drawablePadding="5dp"
-            android:hint="password"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/editTextName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:drawablePadding="5dp"
-            android:hint="name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editTextSchool"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:drawablePadding="5dp"
-            android:hint="school"
-            android:inputType="text" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:lineSpacingExtra="7dp"
-        android:text="Already have an Account?\nClick to Login"
-        android:textAlignment="center"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:textColor="@color/colorFormBackground"
-        android:gravity="center_horizontal" />
-
-    <Button
-        android:id="@+id/buttonSignUp"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Sign Up"
-        android:textAllCaps="false"
-        android:textColor="@color/colorFormBackground" />
-
-</RelativeLayout>-->

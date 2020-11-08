@@ -71,7 +71,7 @@ class Navigation : AppCompatActivity() , NavigationView.OnNavigationItemSelected
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow , R.id.user2 , R.id.logoutt
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow , R.id.user2
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

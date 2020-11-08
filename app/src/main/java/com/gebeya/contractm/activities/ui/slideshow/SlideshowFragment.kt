@@ -18,7 +18,7 @@ import com.gebeya.contractm.activities.ui.home.HomeFragment
 import com.gebeya.contractm.databinding.FragmentHomeBinding
 import com.gebeya.contractm.databinding.FragmentSlideshowBinding
 import com.gebeya.contractm.framework.base.BaseActivity
-import kotlinx.android.synthetic.main.fragment_registor.view.*
+
 import kotlinx.android.synthetic.main.fragment_slideshow.*
 import kotlinx.android.synthetic.main.fragment_slideshow.view.*
 
@@ -91,18 +91,5 @@ class SlideshowFragment : Fragment() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.mainmenu, menu)
 
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        var itemview = item.itemId
-        when(itemview){
-//            R.id.search -> Toast.makeText(applicationContext , "this is search" , Toast.LENGTH_SHORT)
-//            R.id.person -> Toast.makeText(applicationContext , "person clicked" , Toast.LENGTH_SHORT)
-        }
-        return false
-    }
 }

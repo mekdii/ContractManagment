@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.Profile"
+    tools:context=".activities.Login"
     android:padding="50dp"
     android:paddingTop="90dp">
 
@@ -28,10 +28,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:id="@+id/editTextEmaill"
+            android:id="@+id/editTextEmail_login"
             android:hint="@string/email"
             android:textColor="@color/colorPrimary"
             />
+
 
 
 
@@ -52,16 +53,17 @@
             />
 
         <EditText
-            android:id="@+id/etPasss"
+            android:inputType="textPassword"
+            android:id="@+id/editTextPasswor_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
 
             android:hint="@string/password"
-            android:textColor="@color/colorPrimary"
-            />
+
+            android:textColor="@color/colorPrimary" />
         <ImageView
-            android:id="@+id/ivShowHidePasss"
+            android:id="@+id/ivShowHidePass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="-30dp"
@@ -85,7 +87,7 @@
         android:layout_marginTop="30dp">
 
         <Button
-            android:id="@+id/buttonLoginn"
+            android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/login_button"
@@ -136,7 +138,7 @@
             />
 
         <TextView
-            android:id="@+id/signupp"
+            android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"

@@ -62,7 +62,7 @@ class CustomAdapter(val userList: ArrayList<Contract>, private val cellClickList
 //            textViewBusiness.text = user.Busines_partner
 //            textViewStatus.text = user.status
             textViewCategory.text = "Rental"
-            textViewStart_Date.text = user.lemail
+            textViewStart_Date.text = user.date.toString()
             textViewBusiness.text = user.tFirstName
           //  textViewStatus.text = "Active"
             var id  = user._id

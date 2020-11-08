@@ -28,20 +28,7 @@ class HomeFragment : Fragment() {
         setHasOptionsMenu(true)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.mainmenu, menu);
 
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        var itemview = item.itemId
-        when(itemview){
-            R.id.search -> Toast.makeText(activity , "this is search" , Toast.LENGTH_SHORT).show()
-         // R.id.person -> Toast.makeText(applicationContext , "person clicked" , Toast.LENGTH_SHORT)
-        }
-        return false
-    }
 //        homeViewModel =
 //            ViewModelProviders.of(this).get(HomeViewModel::class.java)
 //        val root = inflater.inflate(R.layout.fragment_home, container, false)

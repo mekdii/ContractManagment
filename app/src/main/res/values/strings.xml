@@ -52,4 +52,59 @@
         <item>pay pal</item>
     </string-array>
 
+
+    <string name="welcome_1_title">Welcome</string>
+    <string name="welcome_1_description">Find hundreds of formal contracts easily.</string>
+
+    <string name="welcome_2_title">Favorite</string>
+    <string name="welcome_2_description">Save your time by deals with few clicks.</string>
+
+    <string name="welcome_3_title">Share</string>
+    <string name="welcome_3_description">Get Your self a deal Wherever you are.</string>
+
+    <string-array name="welcome_titles">
+        <item>@string/welcome_1_title</item>
+        <item>@string/welcome_2_title</item>
+        <item>@string/welcome_3_title</item>
+    </string-array>
+
+    <string-array name="welcome_descriptions">
+        <item>@string/welcome_1_description</item>
+        <item>@string/welcome_2_description</item>
+        <item>@string/welcome_3_description</item>
+    </string-array>
+
+    <string name="welcome_skip_button">Skip</string>
+    <string name="first_name">First Name <font fgcolor='#FF0000'>*</font></string>
+    <string name="llast_name">Last Name <font fgcolor='#FF0000'>*</font></string>
+    <string name="lphone_no">Phone no</string>
+    <string name="lemail">email <font fgcolor='#FF0000'>*</font></string>
+    <string name="tenant_information">Tenant Information</string>
+    <string name="tfirst_name">First Name <font fgcolor='#FF0000'>*</font></string>
+    <string name="tlast_name">Last Name <font fgcolor='#FF0000'>*</font></string>
+    <string name="tphone">Phone</string>
+    <string name="temail">Email <font fgcolor='#FF0000'>*</font></string>
+    <string name="rental_information">Rental Information</string>
+    <string name="house_rental_address">House Rental Address</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="postal_code">Postal code</string>
+    <string name="start_date_of_agreement">Start Date of agreement</string>
+    <string name="end_date_of_agreement">End Date of agreement</string>
+    <string name="pay_period">Pay Period <font fgcolor='#FF0000'>*</font></string>
+    <string name="rental_amount_per_month">Rental amount per month</string>
+    <string name="security_deposit">Security Deposit</string>
+    <string name="late_charges">Late Charges</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="collector">Collector</string>
+    <string name="terms_and_conditions">TERMS AND CONDITIONS</string>
+    <string name="insert_your_terms_and_conditions">insert your terms and conditions</string>
+    <string name="landlord_signature">Landlord Signature</string>
+    <string name="tenant_signature">Tenant Signature</string>
+    <string name="submit">SUBMIT</string>
+    <string name="update">UPDATE</string>
+    <string name="print">PRINT</string>
+
+
 </resources>

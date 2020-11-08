@@ -1,13 +1,12 @@
 package com.gebeya.contractm.api
 import android.content.Context
-import android.util.Base64
-import com.gebeya.contractm.activities.onboarding.screens.Registor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
     private const val BASE_URL = "http://192.168.1.5:3000"
+   // private const val BASE_URL = "http://contract-managment.apps.et6ea.gebeya.co"
 
     private lateinit var apiService: Api
 

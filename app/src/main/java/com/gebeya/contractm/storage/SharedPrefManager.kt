@@ -13,6 +13,7 @@ class SharedPrefManager  (context: Context) {
         const val USER_TOKEN = "user_token"
         const val USER_NAME = "user_fname"
         const val USER_lNAME = "user_lname"
+        const val EMAIL = "user_email"
         const val IS_LOGIN = "IsLoggedIn"
         private var mInstance: SharedPrefManager? = null
     }
@@ -20,12 +21,13 @@ class SharedPrefManager  (context: Context) {
     /**
      * Function to save auth token
      */
-    fun saveAuthToken(token: String , fname : String , lname :String ) {
+    fun saveAuthToken(token: String , fname : String , lname :String , email : String ) {
         val editor = prefs.edit()
         editor.putBoolean(IS_LOGIN , true)
         editor.putString(USER_TOKEN, token)
         editor.putString(USER_NAME, fname)
         editor.putString(USER_lNAME , lname)
+        editor.putString(EMAIL , email)
 
         editor.apply()
     }
@@ -39,6 +41,7 @@ class SharedPrefManager  (context: Context) {
         user[USER_TOKEN] = prefs.getString(USER_TOKEN, null)
         user[USER_NAME] = prefs.getString(USER_NAME, null)
         user[USER_lNAME] = prefs.getString(USER_lNAME, null)
+        user[EMAIL] = prefs.getString(EMAIL , null)
         return user
 
 

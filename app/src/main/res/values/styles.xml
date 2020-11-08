@@ -56,4 +56,12 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <style name="button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/yellow_vissible</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
 </resources>
